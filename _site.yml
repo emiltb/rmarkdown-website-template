@@ -33,3 +33,4 @@ output:
       collapsed: false
     includes:
       after_body: include_footer.html
+    code_folding: hide
