@@ -3,6 +3,8 @@ title: "Lab journals"
 output: 
   html_document:
     toc: false
+    includes:
+      after_body: NULL
 ---
 
 All lab journals in this project are available below, sorted by date. 
