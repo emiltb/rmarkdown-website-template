@@ -1,0 +1,16 @@
+---
+title: "Data"
+output: 
+  html_document:
+    toc: false
+    includes:
+      after_body: NULL
+---
+
+All data in this project is listed below. Go to Github to access individual files.
+
+```{r, echo=FALSE}
+(mytree <- data.tree::as.Node(data.frame(pathString = list.files("data", full.names = TRUE, recursive = TRUE))))
+```
+
+
