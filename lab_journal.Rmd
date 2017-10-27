@@ -1,0 +1,22 @@
+---
+title: "Lab journals"
+output: 
+  html_document:
+    toc: false
+---
+
+All lab journals in this project are available below, sorted by date. 
+
+```{r results='asis', echo=FALSE}
+journals <- rev(list.files(pattern = '^\\d{8}.+[\\.Rmd]$'))
+journals <- stringr::str_replace(journals, "Rmd", "html")
+
+dates <- stringr::str_extract(journals, "\\d{8}")
+titles <- stringr::str_replace_all(stringr::str_extract(journals, "(?<=\\d{8}_).*(?=\\.html)"), "_", " ")
+
+for (i in seq_along(journals)) {
+  cat(paste0("* <a href='", journals[i], "'>", dates[i], " ", titles[i], "</a><br>\n"))
+}
+```
+
+
