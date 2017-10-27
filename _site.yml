@@ -2,7 +2,6 @@ name: "YOURNAME"                                  # CHANGE HERE
 output_dir: "."
 navbar:
   title: "YOURNAME"                               # CHANGE HERE 
-  type: inverse
   left:
     - text: "Home"
       icon: fa-home
@@ -25,5 +24,12 @@ navbar:
       href: https://github.com/YOURGITHUB         # CHANGE HERE 
 output:
   html_document:
-    theme: cosmo
-    highlight: textmate
+    theme: flatly
+    highlight: kate
+    self_contained: false
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+    includes:
+      after_body: include_footer.html
