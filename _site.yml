@@ -34,3 +34,6 @@ output:
     includes:
       after_body: include_footer.html
     code_folding: hide
+    fig_width: 8
+    fig_height: 3
+    md_extensions: +header_attributes
